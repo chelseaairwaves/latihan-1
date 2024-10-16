@@ -6,17 +6,72 @@
   <title>Web Chelsea</title>
   <link href='/style.css' rel='stylesheet'>
   <style>
-    h1{color: red}
+    h1{color: red; font-size:32px;text-shadow:2px 2px 10px black;}
     h2{color:blue;}
-    h3{color:green}
-  </style>
+    h3{color:green; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+    p{font-size:30px;background-color: blue; color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+    table{
+      width: 100%;
+    }
+    table,th,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th{
+      background-color: aquamarine;
+    }
+    td{
+      text-align: center;
+    }
+    tr :hover{
+      background-color: silver;
+    }
+ </style>
 </head>
 
 <body>
-  <h1>Aku Chelsea</h1>
+  <h1>Aku Ayanokouji Kiyotaka</h1>
   <h2>Umurku 19 Tahun</h2>
   <h3> Aku dari Bali</h2>
-  
+    <center>
+  <img src="ayanokouji.jpg">
+  </center>
+  <p> Ayanokouji Kiyotaka adalah karakter dalam anime <u><i> Classroom of the Elite</i></u> <br> yang menceritakan tentang kelas D di SMA Elite Tokyo Koudo Ikusei. Di kelas ini, para siswa berlomba-lomba untuk menjadi siswa unggulan. 
+    Ayanokouji Kiyotaka memiliki pemikiran yang realistis dan membahas hal-hal seperti kesetaraan, meritokrasi, dan psikologi manusia. Salah satu quote-nya yang terkenal adalah "semua manusia hanya alat". aku adalah seorang anak sma, aku bersekolah di sma favorit yang ada di jepang. aku adalah bocah paling jenius. aku adalah orang terganteng di kelas. aku akan membangun negeri yang maju dan sejahtera</p>
+    <h2> List Teman</h2>
+  <ul>
+    <li>Kushida</li>
+    <li>Sakura</li>
+  </ul>
+  <hr>
+  <ol style="color: brown; list-style: lower-alpha;"">
+    <li>Kushida</li>
+    <li>Sakura</li>
+    </ol>
+  </ol>
+  <p>
+    <h2>Tabel Sifat</h2>
+    <table border="1"> 
+      <thead>
+      <tr>
+        <th> Nomor </th>
+        <th> Nama </th>
+        <th> Sifat </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> a </td>
+        <td> Kushida </td>
+        <td> Jahat </td>
+      </tr>
+      <tr>
+        <td> b </td>
+        <td> Sakura </td>
+        <td> Pemberani </td>
+      </tr>
+    </tbody>
+    </table>
 
   <button onclick="console.log('hello');">Press me</button>
   <script defer type="text/javascript" src="/main.js"></script>
