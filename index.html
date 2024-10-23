@@ -9,7 +9,7 @@
     h1{color: red; font-size:32px;text-shadow:2px 2px 10px black;}
     h2{color:blue;}
     h3{color:green; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
-    p{font-size:30px;background-color: blue; color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+    p{font-size:30px;background-color: rgb(0, 217, 255); color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
     table{
       width: 100%;
     }
@@ -25,6 +25,29 @@
     }
     tr :hover{
       background-color: silver;
+    }
+    label{fontsize:16px;font-weight: bold;}
+    input{
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: 5px;
+      margin: 8px;
+      color: white;
+      background-color: rgba(0, 238, 255, 0.664);
+      font-size: 18px;
+    }
+    input [type=submit]}
+    select{
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: 5px;
+      margin: 8px;
+      color: white;
+      background-color: rgba(0, 238, 255, 0.664);
+      font-size: 18px;
+    }
+    input[type=checkbox],input[text=radio]{
+      outline: 1px solid black;
     }
  </style>
 </head>
@@ -72,7 +95,38 @@
       </tr>
     </tbody>
     </table>
+    <br> 
+    <form>
+      <label> Form Text</label>
+       <input type="text" name="txalamat" value="Isikan Alamat" id="txalamat">
+      <label> Form Number</label>
+       <input type="Number">
+      <label> Form Tanggal</label>
+        <input type="date">
+      <label> Form Time</label>
+        <input type="time>">
+      <label> Form Pilihan </label>
+        <input type="radio" name="jnsk">Pilih Laki-Laki 
+        <input type="radio" name="jnsk">Pilih Perempuan
+        <input type="checkbox"> Nonton
+        <input type="checkbox"> Mendengarkan Musik
+        <input type="checkbox"> Tidur
+        <br>
+      <label> Pilihan Lainnya</label>
+        <select>
+          <option disable selected> Silahkan Pilih Warna</option>
+          <option> Merah</option>
+          <option> Kuning</option>
+          <option> Hijau</option>
+        </select>
 
+        <br>
+        <label> Form Password</label>
+        <input type="password" name="txPASS">
+      <input type="submit" value="tombol">
+    </form>
+
+    <br>
   <button onclick="console.log('hello');">Press me</button>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
